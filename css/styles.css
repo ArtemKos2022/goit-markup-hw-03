@@ -1,14 +1,14 @@
 /* Vars */
 :root {
-  --main-font: 'Roboto', sans-serif;
-  --secondary-font: 'Raleway', sans-serif;
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
   --primary-color: #212121;
   --white: #ffffff;
-	--accent: #2196f3;
+  --accent: #2196f3;
   --secondary-text-color: #757575;
 }
 
-body{
+body {
   font-family: var(--main-font);
   font-size: 14px;
   line-height: 1.72;
@@ -28,39 +28,36 @@ body{
 }
 
 .list {
- list-style: none;
+  list-style: none;
 }
 
 .nav-link {
-  
   color: var(--primary-color);
   font-weight: 500;
   line-height: 1.4;
   letter-spacing: 0.02em;
- 
-  }
+}
 
 .nav-link:hover,
 .nav-link:focus,
 .nav-link:active {
   color: var(--accent);
-  
 }
 .nav-link-1:hover,
 .nav-link-1:focus,
 .nav-link-1:active {
   color: var(--accent);
-  
 }
-.nav-link-1{color: var(--accent);
+.nav-link-1 {
+  color: var(--accent);
   font-weight: 500;
 }
 
- .link,
- .nav-link-1,
- .contact-link {
+.link,
+.nav-link-1,
+.contact-link {
   text-decoration: none;
-  }
+}
 
 .contact-link {
   line-height: 1.4;
@@ -117,7 +114,7 @@ body{
 }
 
 .text-skils {
- line-height: 1.7;
+  line-height: 1.7;
   color: var(--secondary-text-color);
 }
 
@@ -126,16 +123,14 @@ body{
 }
 
 .teams,
-.title-teams, 
-.section-title
- {
+.title-teams,
+.section-title {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-color);
 }
-
 
 .subtitle-teams {
   font-weight: 500;
@@ -169,7 +164,7 @@ body{
 }
 
 /* Filter  */
- .filter-bnt {
+.filter-bnt {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -192,14 +187,9 @@ body{
 
 .filter-bnt-now:hover,
 .filter-bnt-now:focus,
-.filter-bnt-now:active
- {
-  background-color:var(--accent);
-  
-
+.filter-bnt-now:active {
+  background-color: var(--accent);
 }
-
-
 
 .button:hover,
 .button:focus {
@@ -232,7 +222,6 @@ body{
   font-style: normal;
   color: #ffffff99;
 }
-
 
 .address-contact:hover,
 .address-contact:focus {
