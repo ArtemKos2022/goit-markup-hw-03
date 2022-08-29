@@ -243,6 +243,7 @@ flex-direction: column;
 .skils {
 background-color: var(--white);
 padding-bottom: 0;
+
 }
 
 .subtitle-skils {
@@ -271,7 +272,7 @@ gap: 30px;
 
   /* work*/
 
-.work{
+.work {
   background-color: var(--white);
 }
 
@@ -281,6 +282,8 @@ gap: 30px;
   line-height: 1.17;
   text-align: center;
   margin-bottom: 50px;
+  color: var(--primary-color);
+  
 }
 
 .work-list{
@@ -314,13 +317,14 @@ gap: 30px;
 }
 
 .teams,
-.title-teams,
-.section-title {
+.title-teams
+ {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-color);
+  margin-bottom: 50px;
 }
 
 .subtitle-teams {
@@ -376,6 +380,11 @@ gap: 30px;
   color: var(--primary-color);
 }
 
+.filter-bnt-now.button.active {
+background-color: var(--accent);
+color: var(--white);
+}
+
 .filter-bnt-now:hover,
 .filter-bnt-now:focus,
 .filter-bnt-now:active {
@@ -402,7 +411,8 @@ gap: 30px;
  
 .address,
 .address-items,
-.address-link  {
+.address-link
+ {
 color: var(--white);
 font-style: normal;
 font-weight: 400;
@@ -412,7 +422,7 @@ line-height: 1.71;
   color: var(--white);
 }
 
-.main-logo{
+.logo-footer {
  display: block;
  padding: 0;
  margin-bottom: 20px;
@@ -426,6 +436,7 @@ line-height: 1.71;
   font-style: normal;
   color: #ffffff99;
   margin-bottom: 9px;
+  
 }
 
 .address-contact:hover,
