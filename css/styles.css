@@ -260,6 +260,54 @@ padding-bottom: 0;
   color: var(--secondary-text-color);
   font-weight: 400;
 }
+.skils-list {
+display: flex;
+gap: 30px;
+}
+
+.skils-item {
+  width: 270px;
+}
+
+  /* work*/
+
+.work{
+  background-color: var(--white);
+}
+
+.section-title{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.work-list{
+  display: flex;
+  gap: 30px;
+}
+.work-item{
+  width: 370px;
+}
+
+  /* teams*/
+
+.teams-items{
+  display: flex;
+  gap: 30px;
+}
+
+.teams-item{
+  background-color: var(--white);
+  width: 270 px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.card{
+  padding-top: 30px;
+}
 
 .teams {
   background-color: #f5f4fa;
@@ -269,7 +317,7 @@ padding-bottom: 0;
 .title-teams,
 .section-title {
   font-size: 36px;
-  line-height: 1.16;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-color);
@@ -278,17 +326,17 @@ padding-bottom: 0;
 .subtitle-teams {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.8;
+  line-height: 1.19;
   text-align: center;
-  color: var(--primary-color);
-}
+  }
 
 .teams-text {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.8;
+  line-height: 1.19;
   text-align: center;
   color: var(--secondary-text-color);
+  padding-bottom: 30px;
 }
 
 .cards-title {
@@ -348,22 +396,36 @@ padding-bottom: 0;
 
 .main-footer {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-
+ 
+.address,
+.address-items,
+.address-link  {
+color: var(--white);
+font-style: normal;
+font-weight: 400;
+line-height: 1.71;
+}
 .main-logo-text-white {
   color: var(--white);
 }
 
+.main-logo{
+ display: block;
+ padding: 0;
+ margin-bottom: 20px;
+}
+
 .address-link {
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.17;
-  color: var(--white);
+  margin-bottom: 9px;
 }
 
 .address-contact {
   font-style: normal;
   color: #ffffff99;
+  margin-bottom: 9px;
 }
 
 .address-contact:hover,
