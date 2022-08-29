@@ -1,7 +1,7 @@
 /* Vars */
 :root {
-  --main-font: "Roboto", sans-serif;
-  --secondary-font: "Raleway", sans-serif;
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
   --primary-color: #212121;
   --white: #ffffff;
   --accent: #2196f3;
@@ -9,11 +9,89 @@
 }
 
 body {
+  color: var(--primary-color);
+  background-color: #f5f5f5;
   font-family: var(--main-font);
   font-size: 14px;
   line-height: 1.72;
   letter-spacing: 0.03em;
 }
+.container {
+  width: 1200px;
+  padding: 0 15px 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ h1,
+ h2,
+ h3,
+ p,
+ ul {
+ margin-top: 0;
+ margin-bottom: 0;
+ padding: 0;
+ }
+
+ .section {
+  padding: 94px 0;
+  width: 100%;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    }
+
+/* HEADER */
+.header {
+  border-bottom: 1px solid #ECECEC;
+  }
+
+.header-group,
+.contact-item  {
+ color: var(--secondary-text-color);
+ font-weight: 500;
+ line-height: 1.14;
+ letter-spacing: 0.02em;
+ display: flex;
+ align-items: center;
+}
+ .main-nav{
+ display: flex;
+ align-items: center;
+ margin-right: auto;
+ margin-left: 0;
+ }
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-link, 
+.header-item 
+{
+  display: block;
+  align-items: center;
+  }
+
+.header-item 
+{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    }
+
+.header-group, 
+.contact-item
+{
+  margin-left: auto;
+  margin-right: 0;
+ }
+
+
+
 /* Navigation */
 .main-logo {
   font-family: var(--secondary-font);
@@ -21,22 +99,45 @@ body {
   line-height: 1.19;
   color: var(--accent);
   font-weight: 700;
+  display: block;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
-
+ 
 .main-logo-text {
   color: #000000;
 }
-
-.list {
-  list-style: none;
+.main-nav-items {
+ font-weight: 500;
+ line-height: 1.14;
+ letter-spacing: 0.02em;
+ display: flex;
+ min-width: 45px;
+ margin-left: 93px;
+ margin-right: auto;
 }
 
-.nav-link {
+
+
+
+.nav-link,
+.nav-link-1 {
   color: var(--primary-color);
   font-weight: 500;
   line-height: 1.4;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
+.main-nav-items li {
+  margin-right: 50px;
+}
+.contact-item li,
+.header-group li {
+  margin-right: 50px;
+}
+
+
 
 .nav-link:hover,
 .nav-link:focus,
@@ -52,6 +153,17 @@ body {
   color: var(--accent);
   font-weight: 500;
 }
+.list,
+.nav-item,
+.contact-item,
+.skils-item,
+.work-item,
+.address-item,
+.filter-item,
+.filter-item
+{
+  list-style: none;
+}
 
 .link,
 .nav-link-1,
@@ -64,6 +176,9 @@ body {
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
   font-weight: 500;
+  text-decoration: none;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 .contact-link:hover,
 .contact-link:focus {
@@ -73,49 +188,77 @@ body {
 .hero {
   background-color: #2f303a;
   color: var(--white);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
+
+.hero-container{
+display: flex;
+text-align: center;
+flex-direction: column;
+}
+
+
 .hero-title {
-  text-align: center;
-  font-weight: 900;
+ font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  color: var(--white);
+  margin-top: 0;
+  margin-bottom: 30px;
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .btn-hero {
+  border: none;
+  cursor: pointer;
   font-family: inherit;
+  background-color: var(--accent);
+  color: var(--white);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
+  display: flex;
+  align-items: center;
+  padding: 10px 32px ;
+  min-width: 216px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   letter-spacing: 0.06em;
   border-radius: 4px;
 }
 
 .module-btn-hero {
-  color: var(--white);
-  background-color: var(--accent);
+  background-color: #188ce8;
+}
+ 
+/* text */
+
+.skils {
+background-color: var(--white);
+padding-bottom: 0;
 }
 
-.module-btn-hero:hover,
-.module-btn-hero:focus {
-  background: #188ce8;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  cursor: pointer;
-}
-/* text */
 .subtitle-skils {
-  line-height: 1.4;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.14;
   text-transform: uppercase;
   font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .text-skils {
-  line-height: 1.7;
+  line-height: 1.71;
   color: var(--secondary-text-color);
+  font-weight: 400;
 }
 
 .teams {
