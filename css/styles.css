@@ -1,4 +1,16 @@
-/* Vars */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+   /* Vars */
 :root {
   --main-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
@@ -35,7 +47,6 @@ body {
 
  .section {
   padding: 94px 0;
-  width: 100%;
   }
 
   img {
@@ -47,6 +58,8 @@ body {
 /* HEADER */
 .menu-header {
   border-bottom: 1px solid #ECECEC;
+  padding-top: 24px;
+  padding-bottom: 25px;
   }
 
 .header-group,
@@ -76,12 +89,6 @@ body {
   display: block;
   align-items: center;
   }
-
-.header-item 
-{
-    padding-top: 32px;
-    padding-bottom: 32px;
-    }
 
 .header-group, 
 .contact-item
@@ -177,14 +184,13 @@ body {
   color: var(--secondary-text-color);
   font-weight: 500;
   text-decoration: none;
-  margin-top: 32px;
-  margin-bottom: 32px;
-}
+ }
 .contact-link:hover,
 .contact-link:focus {
   color: var(--accent);
 }
 /* Hero */
+
 .hero {
   background-color: #2f303a;
   color: var(--white);
@@ -192,11 +198,7 @@ body {
   padding-bottom: 200px;
 }
 
-.hero-container{
-display: flex;
-text-align: center;
-flex-direction: column;
-}
+
 
 
 .hero-title {
@@ -211,6 +213,7 @@ flex-direction: column;
   width: 696px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 .btn-hero {
@@ -310,6 +313,7 @@ gap: 30px;
 
 .card{
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .teams {
@@ -332,6 +336,7 @@ gap: 30px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  margin-bottom: 10px;
   }
 
 .teams-text {
@@ -340,23 +345,7 @@ gap: 30px;
   line-height: 1.19;
   text-align: center;
   color: var(--secondary-text-color);
-  padding-bottom: 30px;
-}
-
-.cards-title {
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--primary-color);
-}
-
-.cards-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
-}
+  }
 
 /* Filter  */
 
@@ -422,6 +411,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 1.71;
 }
+
 .main-logo-text-white {
   color: var(--white);
 }
@@ -432,7 +422,8 @@ line-height: 1.71;
  margin-bottom: 20px;
 }
 
-.address-link {
+.address-link,
+.address-item {
   margin-bottom: 9px;
 }
 
@@ -474,12 +465,13 @@ line-height: 1.71;
   letter-spacing: 0.06em;
 }
 
-.cards-text{
+.cards-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
-  color: var(--secondary-color);
+  letter-spacing: 0.03em;
   margin-top: 4px;
+  color: var(--secondary-text-color);
 }
 
 .cards{
@@ -491,4 +483,3 @@ line-height: 1.71;
 .cards-item{
   width: 370;
 }
-
