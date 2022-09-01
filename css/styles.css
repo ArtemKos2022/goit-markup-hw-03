@@ -420,7 +420,10 @@ line-height: 1.71;
 }
 
 .address-link,
-.address-item {
+ .address-mail,
+ .address-item1
+ 
+ {
   margin-bottom: 9px;
 }
 
